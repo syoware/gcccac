@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+        <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="text/css" rel="stylesheet" href="assets/css/owl.carousel.min.css" media="screen,projection" />
+            <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+            <link type="text/css" rel="stylesheet" href="assets/css/style1.css" media="screen,projection" />
+            
+            
+
+        </head>
+        <body>
+            <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+            <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+            <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+            <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            
+            
+            <script type="text/javascript" src="assets/js/moment.min.js"></script>
+            <script type="text/javascript" src="assets/js/fullcalendar.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="assets/css/fullcalendar.min.css">
+            <script src="assets/js/calendar.js"></script>
+
+<div class="fixed-items">
+            <div id="top">
+                <div class="container">
+
+                    <ul class="ftr-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="/contact-us.html">Contact Us</a></li>
+
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><img src="/assets/images/in.png" /></a></li>
+                        <li><a href="#"><img src="/assets/images/fb.png" /></a></li>
+                        <li><a href="#"><img src="/assets/images/tw.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+<div id="header">
+    <div class="container">
+        <div class="item">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#" data-target="slide-menu" class="sidenav-trigger ">
+                        <hr/>
+                        <hr/>
+                        <hr/>
+                    Menu</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <a href="/"><img src="/assets/images/logo.png"></a>
+        </div>
+        <div class="item">
+            <ul class="right-menu">
+                <li><a href="#">عربي</a></li>
+                <li><a href="#" class='dropdown-trigger' data-target='notification'>
+                    <img class="bell-icon" src="/assets/images/bell.png" /></a>
+                </li>
+                <li><a href="#">
+                    <img class="search-icon" src="/assets/images/search.png" />
+                </a></li>
+
+                <li><a href="/login.html" class="login">Login</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<ul id='notification' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+
+  </ul>
+
+<div class="sidenav" id="slide-menu">
+    <div class="inner">
+        <p><a class="sidenav-close" href="#"><img src="/assets/images/close.svg"></a></p>
+        
+
+<ul id="main-menu">
+    <li><a href="/training.html">Training</a>
+       
+    </li>
+
+    <li><a href="/membership.html">Membership</a>
+       
+    </li>
+
+    <li><a href="/case-management.html">Case Management</a>
+        
+    </li>
+
+ <li><a href="/conference-room-booking.html">Reservation of Meeting Room</a>
+       
+    </li>
+    
+</ul>
+
+
+
+<ul class="bottom-menu">
+    <li><a href="contact.html" target="_self">Contact Us</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="#" target="_self">About Us</a></li>
+</ul>
+
+
+
+    </div>
+</div>
+
+
+<!-- Body -->
+
+
+
+
+<!-- Passport Form -1
+			============================================= -->
+
+			<section id="conference-room-booking-calendar" class="conference-room-booking-calendar bg-img">
+
+				<div class="conference-room-booking-calendar-form">
+					<style type="text/css">
+						.bg-img {
+							background-image: url(assets/images/conference-room-booking.jpg);
+							    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 60vh;
+						}
+					</style>
+
+
+					<div class="container">
+
+						<h4 style="text-align: center;"><b>WHAT IS YOUR EXPECTED BOOKING DATE?</b></h4><br /><br />
+						<div class="calender-wrap">
+							<div id='calendar'></div>
+						</div>
+
+						<div id="calendar-info">
+							<div class="form-wraper">
+								<h3>Expected Booking Date :</h3>
+								<h2 id="bkgdate"></h2><br />
+								<div class="form-item hide">
+									<label for="text">Date</label>
+									<div class="form-field">
+										<input id="bkg-date" name="text" type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group hide">
+									<div class="radiobtns-wrap">
+										<h3>Where do you want to place the fingerprint?</h3>
+										<div class="custom-radio">
+											<label class="radio-item">
+												<input name="radio" id="radio_0" type="radio" value="1">
+												<span>Riyadh</span>
+											</label>
+										</div>
+										<div class="custom-radio">
+											<label class="radio-item">
+												<input name="radio" id="radio_1" type="radio" value="2">
+												<span>Jeddah</span>
+											</label>
+										</div>
+										<div class="custom-radio">
+											<label class="radio-item">
+												<input name="radio" id="radio_2" type="radio" value="3">
+												<span>AlKhobar</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<br />
+								
+								
+								
+								<h3>CHOOSE A TIME</h3>
+								
+								<div class="form-item price-calcu">
+									<label class="item-price hide">Travelers over 6 years old</label>
+									<div class="tp-price1 type1-price hide" style=" display: flex;  align-items: center;font-size: 24px;"><b>0</b>&nbsp;BHD</div>&nbsp;&nbsp;
+									<div class="form-field" style="padding-bottom: 0;">
+										<div class="decr number_btn hide">-</div>
+										<input id="type_1" name="text" type="number" value="0" class="form-control hide"
+											>
+										<input type="time" id="appt" name="appt" class="form-control">
+										<div class="incr number_btn hide">+</div>&nbsp;&nbsp;
+										<div class="hide" style=" display: grid; align-items: center;"><b>Hours</b></div>
+									</div>
+								</div>
+								
+								
+								<h3>CHOOSE THE DURATION</h3>
+								<div class="form-item price-calcu">
+									<label class="item-price hide">Travelers over 6 years old</label>
+									<div class="tp-price1 type1-price" style=" display: flex;  align-items: center;font-size: 24px;"><b>0</b>&nbsp;BHD</div>&nbsp;&nbsp;
+									<div class="form-field" style="padding-bottom: 0;">
+										<div class="decr number_btn">-</div>
+										<input id="type_1" name="text" type="number" value="0" class="form-control"
+											>
+										<div class="incr number_btn">+</div>&nbsp;&nbsp;
+										<div class="" style=" display: grid; align-items: center;"><b>Hours</b></div>
+									</div>
+								</div>
+								
+								<h3>CHOOSE No. OF ROOM</h3>
+								<div class="form-item price-calcu">
+									<label class="item-price hide">Travelers over 6 years old</label>
+									<div class="tp-price1 type1-price hide"><b>0</b>BHD</div>
+									<div class="form-field">
+										<div class="decr number_btn">-</div>
+										<input id="type_1" name="text" type="number" value="0" class="form-control"
+											readonly>
+										<div class="incr number_btn">+</div>
+									</div>
+								</div>
+								
+								
+								<h3>CHOOSE No. OF PEOPLE ATTENDING</h3>
+								<div class="form-item price-calcu">
+									<label class="item-price hide">Travelers over 6 years old</label>
+
+									<div class="form-field">
+										<div class="decr number_btn">-</div>
+										<input id="type_3" name="text" type="number" value="0" class="form-control"
+											readonly>
+										<div class="incr number_btn">+</div>
+									</div>
+								</div>
+
+								<div class="form-item type_2 price-calcu hide">
+									<label class="item-price">Travelers under 6 years old</label>
+									<div class="tp-price type2-price"><b>0</b>BHD</div>
+									<div class="form-field">
+										<div class="decr number_btn">-</div>
+										<input id="type_2" name="text" type="number" value="0" class="form-control"
+											readonly>
+										<div class="incr number_btn">+</div>
+									</div>
+								</div>
+								<div class="form-item inline-wrap">
+									<label for="text">Do you have a discount code?</label>
+									<div class="form-field">
+										<input id="text" name="text" type="text" class="form-control">
+									</div>
+									<div class="form-action">
+										<button name="submit" type="submit" class="btn"
+											style="height: 41px;">Apply</button>
+									</div>
+								</div>
+
+								<div class="total-wrap">
+									<h5>Total cost</h5>
+									<h3 class="teal-color"><b id="totalamt">0</b> BHD</h3>
+									<p>The price includes: appointment fee, service, translation, medical insurance and
+										tax*
+									</p>
+									<p>The price does not include: passport delivery fees to the embassy and delivery
+										fees
+										from the unified visa center</p>
+
+								</div>
+
+
+
+
+								<div class="form-action">
+									<a href="/conference-room-booking-your-details.html" class="btn">NEXT</a>
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+					</div>
+			</section>
+            
+<!-- Body -->
+
+
+
+
+        
+
+                
+
+<div id="footer">
+    <div class="container">
+        
+<div class="flexrow">
+    
+    
+    <div class="item s3">
+        <div class="inner">
+            <h2>Subscribe</h2>
+            <div class="form-item">
+                <div class="news-form">
+                    <input type="email" placeholder="Email Address" name="EMAIL" class="form-item">
+                    <button type="submit" class="newsbtm">
+                            <i></i>
+                    </button>
+                </div>
+
+
+            </div>
+            <p>Subscribe our newsletter to get our latest update & news.</p>
+
+        </div>
+    </div>
+    <div class="item s2">
+        <div class="inner">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Center&#39;s Rules</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="item s2">
+        <div class="inner">
+            <h2>Contact</h2>
+            <ul>
+                <li>+973 17278000</li>
+                <li>+973 17278000</li>
+                <li>info@gcccac.org</li>
+            </ul>
+        </div>
+    </div>
+    <div class="item s5">
+        <div class="inner">
+            <img src="/assets/images/map.png">
+            <!-- <h2>Social Media</h2>
+                <ul class="social-links">
+                    <li><a href="#" class="in"></a></li>
+                    <li><a href="#" class="fa"></a></li>
+                    <li><a href="#" class="tw"></a></li>
+                </ul> -->
+        </div>
+    </div>
+    
+    
+</div>
+
+
+    </div>
+</div>
+
+
+<div id="copy-right">
+    <div class="container">
+        <p>Copyright © 2023 G.C.C Commercial Arbitration Centre , All rights Reserved</p>
+    </div>
+</div>
+
+<div class="feecal-wrap drag-content">
+ <div class='feeshow' href='#'>Arbitration Calculator</div>
+  <div class='feecal-content'>
+    <div class="cls-btn"><span class="feeshow"><img src="/assets/images/close.svg"></span></div>
+    <div class="inner">
+        <div class="form-item">
+            <input type="text" id="amount" name="amount" placeholder="Dispute Amount (BHD)" autocomplete="off" required="">
+        </div>
+        <div class="form-item">
+        <select>
+              <option value="" disabled selected>No. of Arbitrator</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <button class="btn">Calculate</button>
+        </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+
+<script>
+
+
+
+(function($) {
+  $(document).ready(function() {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+
+  });
+})(jQuery);
+
+
+
+
+</script>
+
+
+
+            </body>
+        </html>
