@@ -1,6 +1,16 @@
 (function($) {
   $(document).ready(function() {
 
+  $('body a').each(function(){ 
+    var oldUrl = $(this).attr("href"); 
+    var newUrl = ("/gcccac" + oldUrl );
+    $(this).attr("href", newUrl);
+  });
+
+
+
+
+
     $('.tabs').tabs();
 
     $("body").on('click', '.apply-btn', function () {
